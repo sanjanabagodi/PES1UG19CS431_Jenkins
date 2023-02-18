@@ -1,13 +1,9 @@
 pipeline{
   agent any
   stages {
-    stage('Clone repository') {
-      steps {
-        git branch: 'main', url: 'https://github.com/sanjanabagodi/PES1UG19CS431_Jenkins.git'
-      }
-    }
     stage('Build'){
       steps{
+        git branch: 'main', url: 'https://github.com/sanjanabagodi/PES1UG19CS431_Jenkins.git'
         sh 'g++ -o program_output main/hello.cpp'
         echo 'Build Stage Successful'
       }
