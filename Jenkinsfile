@@ -3,7 +3,7 @@ pipeline{
   stages {
     stage('Build'){
       steps{
-        sh 'g++ -o sanjanabagodi/PES1UG19CS431_Jenkins/main/hello.cpp'
+        sh 'g++ -o program sanjanabagodi/PES1UG19CS431_Jenkins/main/hello.cpp'
         echo 'Build Stage Successful'
       }
     }
