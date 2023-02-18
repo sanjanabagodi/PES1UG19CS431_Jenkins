@@ -8,7 +8,7 @@ pipeline{
     }
     stage('Build'){
       steps{
-        sh 'g++ -o program PES1UG19CS431_Jenkins/main/hello.cpp'
+        sh 'g++ -o program main/hello.cpp'
         echo 'Build Stage Successful'
       }
     }
