@@ -3,12 +3,12 @@ pipeline{
   stages {
     stage('Clone repository') {
       steps {
-        git branch: 'main', url: 'https://github.com/sanjanabagodi/PES1UG19CS431_Jenkins/tree/main/main.git'
+        git branch: 'main', url: 'https://github.com/sanjanabagodi/PES1UG19CS431_Jenkins.git'
       }
     }
     stage('Build'){
       steps{
-        sh 'g++ -o program main/hello.cpp'
+        sh 'g++ -o program PES1UG19CS431_Jenkins/main/hello.cpp'
         echo 'Build Stage Successful'
       }
     }
