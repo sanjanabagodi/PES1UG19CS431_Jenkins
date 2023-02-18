@@ -3,12 +3,13 @@ pipeline{
   stages {
     stage('Build'){
       steps{
-        sh 'build PES1UG19CS431-1'
+        sh 'g++ -o program https://github.com/sanjanabagodi/PES1UG19CS431_Jenkins/tree/main/main/hello.cpp'
         echo 'Build Stage Successful'
       }
     }
     stage('Test'){
       steps{
+        sh 'a.exe'
         echo 'Test Stage Successful'        
       }
     }
