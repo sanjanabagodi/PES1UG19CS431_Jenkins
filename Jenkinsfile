@@ -3,13 +3,12 @@ pipeline{
   stages {
     stage('Build'){
       steps{
-        sh 'g++ -o hello.cpp'
+        sh 'build PES1UG19CS431-1'
         echo 'Build Stage Successful'
       }
     }
     stage('Test'){
       steps{
-        sh 'a.exe'
         echo 'Test Stage Successful'        
       }
     }
