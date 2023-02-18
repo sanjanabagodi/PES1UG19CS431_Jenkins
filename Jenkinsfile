@@ -3,11 +3,13 @@ pipeline{
   stages {
     stage('Build'){
       steps{
+        sh 'gcc hello.cpp'
         echo 'Build Stage Successful'
       }
     }
     stage('Test'){
       steps{
+        sh 'a.exe'
         echo 'Test Stage Successful'        
       }
     }
