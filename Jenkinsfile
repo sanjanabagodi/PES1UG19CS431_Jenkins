@@ -8,13 +8,13 @@ pipeline{
     }
     stage('Build'){
       steps{
-        sh 'g++ -o program main/hello.cpp'
+        sh 'g++ -o program_output main/hello.cpp'
         echo 'Build Stage Successful'
       }
     }
     stage('Test'){
       steps{
-        sh 'a.exe'
+        sh './program_output'
         echo 'Test Stage Successful'        
       }
     }
